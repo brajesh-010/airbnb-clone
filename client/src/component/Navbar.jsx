@@ -5,7 +5,7 @@ import {UserContext} from "../UserContext.jsx";
 const Navbar = () => {
     const {user}=useContext(UserContext);
     return (
-        <header className="px-8 py-4 shadow-xl flex justify-between bg-blue-100 fixed top-0 left-0 w-full z-40">
+        <header className="px-8 py-4 shadow-xl flex justify-between navbar  fixed top-0 left-0 w-full z-40">
             <Link to={'/'} className="flex items-center gap-2">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +49,8 @@ const Navbar = () => {
                 </button>
             </div>
 
-            <div className=" flex items-center gap-3 border border-gray-500 rounded-full px-2 bg-white">
-                <div className=" ml-4 flex items-center">
+            <div className=" flex items-center gap-3 border border-gray-500 rounded-full px-2 bg-[#FFFDD0]">
+                <div className=" ml-4 flex items-center text-black">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -67,7 +67,7 @@ const Navbar = () => {
                     </svg>
                 </div>
 
-                <div className='flex items-center overflow-hidden gap-3 justify-center'>
+                <div className='flex items-center overflow-hidden gap-3 text-black justify-center'>
                     <Link to={user?'/account':'/login'} className="bg-slate-500 rounded-full flex items-center p-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

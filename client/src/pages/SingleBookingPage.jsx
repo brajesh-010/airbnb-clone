@@ -34,7 +34,7 @@ const SingleBookingPage = () => {
         </div>
         <div className="bg-rose-600 text-white p-6 rounded-2xl">
           <div>Total price</div>
-          <div className="text-3xl">${booking.price}</div>
+          <div className="text-3xl">₹{booking.price}</div>
         </div>
       </div>
       <div className="mt-20">

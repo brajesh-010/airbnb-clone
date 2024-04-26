@@ -46,7 +46,7 @@ export default function BookingWidget({ place }) {
     return (
         <div className="bg-white shadow p-4 rounded-2xl mt-8">
             <div className="text-2xl text-center">
-                Price: ${place.price} / per night
+                Price: ₹{place.price} / per night
             </div>
             <div className="border rounded-2xl mt-4">
                 <div className="grid">
@@ -96,7 +96,7 @@ export default function BookingWidget({ place }) {
                 Book this place
                 {numberOfNights > 0 && (
                     // eslint-disable-next-line react/prop-types
-                    <span> ${numberOfNights * place.price}</span>
+                    <span> ₹{numberOfNights * place.price}</span>
                 )}
             </button>
         </div>
